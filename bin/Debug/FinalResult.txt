@@ -1,0 +1,25 @@
+code segment
+
+p1:
+a	equ	[ebp + 2]
+a1	equ	[ebp + 2]
+b	equ	[ebp + 4]
+c	equ	[ebp + 10]
+
+push	ebp
+mov	ebp, esp
+
+mov	eax, b
+mov	a, 10
+mov	eax, c
+mov	a, 11
+mov	eax, b
+mov	b, 10
+mov	eax, c
+mov	c, 11
+
+pop	ebp
+
+ret
+
+code ends

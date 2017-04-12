@@ -1,0 +1,11 @@
+procedure p1(a, a1:integer;b:float;c:signal;);
+Begin
+a = b;
+a = 10;
+b = c;
+c = 11;
+a = b;
+a = 10;
+b = c;
+c = 11;
+END;
